@@ -163,17 +163,17 @@ cat > ~/.claude-code-router/config.json << 'EOF'
       "api_base_url": "https://portal.qwen.ai/v1/chat/completions",
       "api_key": "YOUR_QWEN_ACCESS_TOKEN_HERE",
       "models": [
-        "qwen-coder"
+        "qwen3-coder-plus"
       ]
     }
   ],
   "Router": {
-    "default": "qwen,qwen-coder",
-    "background": "qwen,qwen-coder",
-    "think": "qwen,qwen-coder",
-    "longContext": "qwen,qwen-coder",
+    "default": "qwen,qwen3-coder-plus",
+    "background": "qwen,qwen3-coder-plus",
+    "think": "qwen,qwen3-coder-plus",
+    "longContext": "qwen,qwen3-coder-plus",
     "longContextThreshold": 60000,
-    "webSearch": "qwen,qwen-coder"
+    "webSearch": "qwen,qwen3-coder-plus"
   }
 }
 EOF
